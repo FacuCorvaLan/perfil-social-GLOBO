@@ -1,0 +1,293 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    background-color: rgb(19, 4, 32);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2em;
+}
+
+@media (max-width: 768px) {
+    .perfil,
+    .publicacion{
+        min-width: auto; 
+    }
+
+    .sobremi{
+        flex-Grow: 1;
+        align-items: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .img-fluid {
+        max-width: 180px;
+    }
+    .sobremi{
+        min-width: 300px;
+    }
+    .perfilUsuario{
+        max-width: 940px;
+    }
+}
+
+.navbar{
+    background-color: blueviolet;
+    margin-bottom: 20px;
+}
+.logo{
+    display: flex;
+    max-width: 120px;
+}
+
+/*Datos de Usuario*/
+.UserInfo{
+    display:flex;
+    flex-wrap: wrap;
+    box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(139, 102, 163, 0.822);
+    border-radius: 2em;
+    gap: 2em;
+    margin: 0;
+}
+.cuadroImg{
+    display:flex;
+    align-items: center;
+    margin: 1em;
+    max-width: 180px;
+}
+
+.img-fluid {
+    padding: 0.2em;
+    border: solid;
+    border-color: rgba(89, 9, 163, 0.993);
+    border-radius: 100%;
+    min-width: 180px;
+    max-width: 180px;
+}
+
+.cuadroDatos{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: auto;
+    align-items: center;
+    text-align: start;
+    margin: 20px 0;
+}
+
+.listData{
+    padding: 0;
+}
+.itemLista{
+    padding-top: 5px;
+    font-size: 13px;
+}
+
+.botonSeguir{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding : 2em;
+}
+
+button.botonSeguir{ 
+    max-width: fit-content;
+    margin: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .perfil{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cuadroDatos{
+        margin: 0;
+        justify-content: center;
+    }
+
+    .cuadroImg{
+        padding: 0;
+        margin-top: 1.6em;
+    }
+}
+
+/*Publicación y SobreMi*/
+.segundoCuadro{
+    margin-top: 2em;
+    padding: 0 12px;
+    gap: 2em;
+}
+
+.publicacion{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(139, 102, 163, 0.822);
+    min-width: auto;
+    border-radius: 2em;
+}
+
+.imgPublicacion{
+    width: fit-content;
+    margin: 0 1.4em 1em 1.4em;
+    border-radius: 1em;
+    overflow: hidden;
+}
+.publicado {
+    display: flex;
+    min-width: 400px;
+    padding: 1em 1em 0 1em;
+    font-size: 20px;
+}
+
+.row {
+    justify-content: center;
+}
+
+.posteo {
+    min-width: 10em;
+    width: 100%;
+}
+
+.meGusta{
+    display: flex;
+    padding: 0 5px 0 5px;
+}
+
+.MG {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    margin: 0 1em 0 1em;
+}
+
+.btnMG {
+    display: flex;
+    justify-content: center;
+    width: 7em;
+    border-style: solid;
+    border-color: rgba(122, 32, 206, 0.884);
+}
+
+.bi-hand-thumbs-up{
+    padding: 1px;
+    color: rgb(177, 139, 212);
+}
+.nroLike{
+    Display: flex;
+    justify-content: flex-end;
+    padding: 0 5px 0 5px;
+}
+.cantLike {
+    font-size: 1.2em;
+}
+
+.commentsList{
+    display: flex;
+    margin: 1em 0.5em 0 0.5em;
+}
+.listaComentarios {
+    list-style: none;
+    text-align: left;
+    padding: 12px;
+}
+
+.commentsInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 0.5em 10em 0.5em;
+}
+
+.commentsBtn{
+    display: flex;
+    justify-content: flex-end;
+    max-width: fit-content;
+}
+
+#inp {
+    color:white;
+    background-color:transparent;
+    width: 100%;
+    
+}
+#inp:hover {
+    background-color:transparent;
+}
+
+.commentsBox::placeholder{
+    color: rgb(162, 134, 189);
+}
+
+.sobremi{
+    display: flex;
+    flex-direction: column;
+    border-radius: 2em;
+    height: fit-content;
+    padding: 2em;
+    text-align:left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(139, 102, 163, 0.822);
+}
+
+/*Botones y demás*/
+.btn-blueviolet {
+    border-radius: 1em;
+    font-size: 1.1em;
+    color: #ffffff;
+    background-color: blueviolet;
+    border-color: blueviolet;
+}
+
+.btn-blueviolet:hover {
+    color: #ffffff;
+    background-color: darkviolet; 
+    border-color: darkviolet;
+}
+
+.form-control{
+    border-radius: 1em;
+}
+
+.elementsBold{
+    font-weight: bolder;
+}
+
+.commentDiv{
+    display: flex;
+    gap: 1em;
+}
+
+.btnDelete{
+    font-family: "Montserrat", sans-serif;
+    color: red;
+    border-color: rgb(186, 140, 230);
+    border-radius: 1em;
+    background-color: transparent;
+    height: fit-content;
+}
+
+@keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.error{
+    color: red;
+    font-weight: bolder;
+}
+
+.errorAnimation1{
+    animation: slideUp 0.5s ease forwards;
+}
+
+.tamañoTexto{
+    font-size: 13px;
+}
